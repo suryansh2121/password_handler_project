@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .mycontainer{
+        @apply container px-40 py-20 mx-auto;
+    }
+}
+
+.fa-edit {
+  background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.fa-edit {
+    font-size: 1.4rem;
+    margin-right: 4px;
+    width: 25px ;
+    height: 25px ; 
+}
+
+ .fa-edit:hover {
+    animation: zoomin .5s  alternate; /* Apply pulsating animation on hover */
+}
+
+@keyframes zoomin {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+/* .logo::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #ebe4e7;
+    opacity: 0;
+    border-radius: 50%;
+    z-index: 0;
+    transition: opacity 0.5s ease, transform 1s ease;
+  }
+  .logo:hover {
+    box-shadow: 0 8px 16px darkviolet;
+  }
+   */
